@@ -1,6 +1,4 @@
 Davidxu::Application.routes.draw do
-  resources :entries
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
