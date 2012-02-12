@@ -1,4 +1,8 @@
 Davidxu::Application.routes.draw do
+  resources :groupings
+
+  resources :user_events
+
   resources :users
 
   resources :events
