@@ -17,11 +17,17 @@
   </div>
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.text_field :password %>
+    <%= f.password_field :password %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
+  </div>
+  <div class="field">
+    <%= f.radio_button(:gender, "male") %>
+    <%= label(:gender_m, "Male") %>
+    <%= f.radio_button(:gender, "female") %>
+    <%= label(:gender_f, "Female") %>
   </div>
   <div class="actions">
     <%= f.submit %>

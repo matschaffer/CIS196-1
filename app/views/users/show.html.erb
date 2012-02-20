@@ -1,3 +1,11 @@
+<%= stylesheet_link_tag "application.css" %>
+
+<body>
+<div class="site_wrapper">
+<table id="center_wrapper">
+<td>
+
+<h1>About <%=@user.username %></h1>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -14,7 +22,17 @@
   <b>Email:</b>
   <%= @user.email %>
 </p>
+<p>
+  <b>Gender:</b>
+  <%= @user.gender %>
+</p>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+</td>
+</table>
+
+</div>
+</body>
