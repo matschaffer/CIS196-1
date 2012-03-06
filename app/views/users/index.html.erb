@@ -1,11 +1,14 @@
-<%= stylesheet_link_tag "application.css" %>
+<%= stylesheet_link_tag "bootstrap/bootstrap.css" %>
 <body>
-<div class="site_wrapper">
+
+<%= link_to 'Logout', destroy_user_session_path%>
 
 
-	<table id="center_wrapper">
-	<td>
-		<h1>Poolly Users</h1>
+
+
+
+<!--
+		<h1>Users</h1>
 	
 	
 		<h3> 
@@ -34,11 +37,9 @@
 		
 		<br />
 		
-		<%= link_to 'Register for Poolly', new_user_path %>
 <br>	
 		<%= link_to 'Take a look at existing Groups', "/groups" %>
-	</td>
-	</table>
-</div>
+-->
 
+		<%= link_to 'Register', new_user_path %>
 </body>

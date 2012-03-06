@@ -1,5 +1,7 @@
 
 Davidxu::Application.routes.draw do
+  devise_for :users
+
   resources :groupings
 
   resources :user_events
