@@ -6,6 +6,8 @@ Davidxu::Application.routes.draw do
 
   resources :user_events
 
+  resources :users
+
   resources :events
 
   resources :groups
