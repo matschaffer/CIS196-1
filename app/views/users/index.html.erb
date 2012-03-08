@@ -1,8 +1,7 @@
 <%= stylesheet_link_tag "bootstrap/bootstrap.css" %>
 <body>
 
-<%= link_to 'Logout', destroy_user_session_path%>
-
+<%= link_to 'Sign In!', new_user_session_path, method: :get %>
 
 
 
@@ -41,5 +40,5 @@
 		<%= link_to 'Take a look at existing Groups', "/groups" %>
 -->
 
-		<%= link_to 'Register', new_user_path %>
+		<%= link_to 'Register', new_user_registration_path %>
 </body>
